@@ -40,7 +40,6 @@ client.on("message", async message => {
     } catch (err) {
       message.delete(5000)
         message.channel.send("comando desconhecido.").then(message => {message.delete(10000)})
-      console.error("Erro:" + err);
     }
      
   })  
